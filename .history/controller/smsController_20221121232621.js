@@ -17,7 +17,7 @@ module.exports = {
           from: "+14059933371",
           to: phone_number,
         })
-        .then((message) => res.send(message))
+        .then((message) => res.send(message.sid))
         .catch((err) => console.log(err.message));
     } catch (error) {
       console.log("error", error);

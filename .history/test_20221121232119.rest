@@ -1,10 +1,10 @@
 POST http://localhost:8011/
-Content-Type: application/json
 
+Content-Type: application/json
 {
    "event_name":"TRACE EVENT",
    "event_date":"21/12/2019",
-   "phone_number":"+254700716563"
+   "phone_number":"+14059933371",
 }
 
 
