@@ -4,7 +4,7 @@ exports.sendSms = async (req, res) => {
   try {
     let { event_date, event_name, phone_number } = req.body;
 
-    const accountSid = process.env.TWILIO_ACCOUNT_SID;
+    const accountSid = process.env.TWTWILIO_ACCOUNT_SID;
     const authToken = process.env.TWILIO_AUTH_TOKEN;
     const client = require("twilio")(accountSid, authToken);
 
