@@ -39,16 +39,16 @@ module.exports = {
         ? client.messages
             .create({
               body: `Hello This is a reminder of Event: ${name} happening on date ${date} `,
-              from: "whatsapp:+14155238886",
-              to: "whatsapp:+254700716563",
+              from: "whatsapp: +16802153782",
+              to: `whatsapp: ${phone_number}`,
             })
             .then((message) => res.send(message))
             .catch((err) => console.log(err.message))
         : client.messages
             .create({
               body: `Hello This is a reminder of Task: ${name} due on date ${date} `,
-              from: "whatsapp:+14155238886",
-              to: "whatsapp:+254700716563",
+              from: "whatsapp :+16802153782",
+              to: `whatsapp: ${phone_number}`,
             })
             .then((message) => res.send(message))
             .catch((err) => console.log(err.message));

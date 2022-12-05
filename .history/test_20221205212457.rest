@@ -2,10 +2,10 @@ POST http://localhost:8011/
 Content-Type: application/json
 
 {
-   "name":"TRACE +mEVENT",
-   "date":"21/12/2019",
-   "phone_number":"+254700716563",
-   "type":"event"}
+   "event_name":"TRACE EVENT",
+   "event_date":"21/12/2019",
+   "phone_number":"+254700716563"
+}
 
 
 ####
@@ -18,9 +18,9 @@ POST http://localhost:8011/whatsapp
 Content-Type: application/json
 
 {
-   "name":"TRACE +mEVENT",
+   "name":"TRACE EVENT",
    "date":"21/12/2019",
-   "phone_number":"+254 700 716563",
+   "phone_number":"+254115093877",
    "type":"event"
 }
 

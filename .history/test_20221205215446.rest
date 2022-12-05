@@ -20,7 +20,7 @@ Content-Type: application/json
 {
    "name":"TRACE +mEVENT",
    "date":"21/12/2019",
-   "phone_number":"+254 700 716563",
+   "phone_number":"+254700716563",
    "type":"event"
 }
 

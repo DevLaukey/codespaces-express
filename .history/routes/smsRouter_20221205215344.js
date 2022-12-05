@@ -6,5 +6,4 @@ const { sendSms, sendWhatsapp } = require("../controller/smsController");
 
 router.post('/', sendSms);
 router.post('/whatsapp', sendWhatsapp);
-
 module.exports = router;

@@ -28,8 +28,7 @@ module.exports = {
       console.log("error", error);
     }
   },
-
-  sendWhatsapp: async (req, res) =>{
+  sendWhatsapp: async function (req, res) {
     const { date, name, phone_number, type } = req.body;
     try {
       const accountSid = process.env.TWILIO_ACCOUNT_SID_WHATSAPP;
@@ -39,16 +38,16 @@ module.exports = {
         ? client.messages
             .create({
               body: `Hello This is a reminder of Event: ${name} happening on date ${date} `,
-              from: "whatsapp:+14155238886",
-              to: "whatsapp:+254700716563",
+              from: "+16802153782",
+              to: phone_number,
             })
             .then((message) => res.send(message))
             .catch((err) => console.log(err.message))
         : client.messages
             .create({
               body: `Hello This is a reminder of Task: ${name} due on date ${date} `,
-              from: "whatsapp:+14155238886",
-              to: "whatsapp:+254700716563",
+              from: "+16802153782",
+              to: phone_number,
             })
             .then((message) => res.send(message))
             .catch((err) => console.log(err.message));
